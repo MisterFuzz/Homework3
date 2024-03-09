@@ -1,1 +1,41 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="site.css" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <form name="mainForm" onsubmit="return false">
+        <fieldset id="loginField">
+            <legend>Login</legend>
+            <button id="newUserB">Click for New User</button>
+            <br>
+            <button type="button" id="extUserB">Click for Existing User</button>
+        </fieldset>
+        <fieldset id="newUserF">
+            <legend>New User</legend>
+            <input type="text" placeholder="Username" id="usernameN">
+            <br>
+            <input type="text" placeholder="Password" id="passwordN">
+            <br>
+            <input type="text" placeholder="City" id="cityN">
+            <br>
+            <input type="text" placeholder="State" id="stateN">
+            <br>
+            <button id="createButton">Login</button>
+        </fieldset>
+        <fieldset id="extUserF">
+            <legend>Existing User</legend>
+            <input type="text" placeholder="Username" id="usernameE">
+            <br>
+            <input type="text" placeholder="Password" id="passwordE">
+            <br>
+            <button id="loginButton">Login</button>
+        </fieldset>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
